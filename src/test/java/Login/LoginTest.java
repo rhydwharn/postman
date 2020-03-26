@@ -18,8 +18,8 @@ public class LoginTest {
         System.out.println(driver.getTitle());
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.linkText("Sign In")).click();
-        driver.findElement(By.name("username")).sendKeys("jideluvs@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("L0rlah10.");
+        driver.findElement(By.name("username")).sendKeys("");
+        driver.findElement(By.id("password")).sendKeys("");
         driver.findElement(By.xpath("//button[@id='sign-in-btn']")).click();
     }
 
